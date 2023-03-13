@@ -1,5 +1,5 @@
 // Get the existing element that you want to duplicate
-const existingElement = document.getElementById('brick');
+const existingElement = document.getElementById('brick0');
 
 // Get the parent container of the existing element
 const parentContainer = existingElement.parentNode;
