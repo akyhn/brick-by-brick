@@ -71,4 +71,12 @@ function stopMoving(brickMoving, brickAbove, brickB4){
     // Add the absolute value of the difference to the gameWidth variable.
     gameWidth = gameWidth + absDifference;
     // Set the CSS custom property '--width' to the new value of gameWidth.
-    document.documentElement.style
+    document.documentElement.style('--width', gameWidth + "px");
+
+    // Create a new 'onclick' attribute for the btn element that calls the stopMoving function with the appropriate arguments.
+    var onclick = "stopMoving('slider".concat(counter, "','slider", counter+1, "','slider", counter-1, "')");
+    btn.setAttribute("onclick",onclick);
+
+    // Increment the counter variable.
+    counter++;
+}
